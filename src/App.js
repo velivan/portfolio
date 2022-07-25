@@ -5,7 +5,8 @@ function App() {
   return (
     <div className="App">
     <Nav />
-     <h1>Portfolio</h1>
+     <h1>My Portfolio</h1>
+     <h2>Test Git</h2>
     </div>
   );
 }
