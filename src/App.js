@@ -6,7 +6,8 @@ function App() {
     <div className="App">
     <Nav />
      <h1>My Portfolio</h1>
-     <h2>Test Git</h2>
+     <h2>Test Git</h2> 
+     <p>I'm codin on iPad Pro</p>
     </div>
   );
 }
