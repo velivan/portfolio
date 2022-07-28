@@ -1,3 +1,12 @@
-.navlink a, Link{
+ a{
     color: darkcyan;
+}
+.navlink a:hover{
+    color: rgb(9, 161, 161);
+}
+.navlink a:active{
+    color: rgb(233, 62, 202);
+}
+ a.active{
+    color: rgb(157, 185, 1);
 }

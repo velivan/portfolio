@@ -1,11 +1,12 @@
 import React from "react";
 import s from "./navlink.module.css";
-import { Link } from "react-router-dom";
+import a from './navlink.css'
+import { NavLink } from "react-router-dom";
 
 function Navlink (props){
     return(
         <div className={s.navlink}>
-        <Link to={props.link}>{props.name}</Link>
+        <NavLink to={props.link}>{props.name}</NavLink>
             
         </div>
        
