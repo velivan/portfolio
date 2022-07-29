@@ -1,0 +1,5 @@
+[
+    {"id": 1, "msgen":"Hi", "msgua": "Привіт"},
+    {"id": 2, "msgen": "Hello!", "msgua": "Добрий день!"},
+    {"id": 3, "msgen": "How are you?", "msgua": "Як ти?"}
+]

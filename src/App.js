@@ -1,15 +1,16 @@
 import './App.css';
 import Nav from './component/header/nav/Nav';
 import langue from './component/langue/CheckLangue';
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import Pagetwo from './component/Pages/Pagetwo';
 import Pageone from './component/Pages/Pageone';
 import Homepage from './component/Pages/Homepage';
 import Chat from './component/Chat/Chat';
-import json from './API/data.json'
+import dataUser from './API/dataUser.json';
+import dataMsg from './API/dataMsg.json';
 
 
-function App() {
+function App(props) {
   return (
  <BrowserRouter>
  <div className="App">
@@ -25,7 +26,7 @@ function App() {
      <Route path="/" element={<Homepage />}/>
      <Route path="/Pageone" element={<Pageone />}/>
      <Route path="/Pagetwo" element={<Pagetwo />}/>
-     <Route path="/Chat" element={<Chat />}/>
+     <Route path="/Chat" element={<Chat dataUser={dataUser} dataMsg={dataMsg}/>}/>
      
      </Routes>
      
