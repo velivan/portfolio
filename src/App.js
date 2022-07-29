@@ -22,8 +22,8 @@ function App() {
      <Route path="/" element={<Homepage />}/>
      <Route path="/Pageone" element={<Pageone />}/>
      <Route path="/Pagetwo" element={<Pagetwo />}/>
-     </Routes>
-     
+     <Route path="chat" />
+     <Routes />
       
 
      
