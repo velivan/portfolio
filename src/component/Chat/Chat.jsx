@@ -4,6 +4,15 @@ import langue from '../langue/CheckLangue';
 import style from '../Chat/Chat.module.css'
 import { NavLink } from "react-router-dom";
 
+let userdata = [
+    {id: 1, nameEn:'Ivan', nameUa:'Іван'},
+    {id: 2, nameEn:'Inna', nameUa:'Інна'},
+    {id: 3, nameEn:'Nastya', nameUa:'Настя'}
+]
+let apimsg = [
+    {id: 1, msgen:'Hi', msgua: 'Привіт'},
+    {id: 2, msgen: 'Hello!', msgua: 'Добрий день!'},
+]
 const DialogItem = (props) =>{
     let path = "/Chat#/" +  props.id 
 
@@ -19,7 +28,8 @@ const Message = (props) =>{
     <p>{langue()  ? props.msgen : props.msgua }</p>
 </div>
 }
-
+let userEl = userdata.map( user => <DialogItem id={user.id} nameEn={user.nameEn} nameUa={user.nameUa} />)
+let msgEl = apimsg.map( msg => <Message id={msg.id} msgen={msg.msgen} msgua={msg.msgua} />)
 const Chat = () =>{
     return(
         <div>
@@ -28,16 +38,10 @@ const Chat = () =>{
         </h1>
         <div className={style.dialogs}>
             <div className={style.dialogsitems}>
-                    
-               <DialogItem id='1' nameEn='Ivan' nameUa='Іван' />
-               <DialogItem id='2' nameEn='Inna' nameUa='Інна' />
-               <DialogItem id='3' nameEn='Nastya' nameUa='Настя' />
-                    
+                {userEl}   
             </div>
             <div className={style.messages}>
-                <Message msgen='Hi' msgua='Привіт' />
-                <Message msgen='Hello!' msgua='Добрий день!' />
-                
+                {msgEl}
             </div>
         </div>
 
