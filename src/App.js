@@ -6,6 +6,7 @@ import Pagetwo from './component/Pages/Pagetwo';
 import Pageone from './component/Pages/Pageone';
 import Homepage from './component/Pages/Homepage';
 import Chat from './component/Chat/Chat';
+import json from './API/data.json'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <h1>{langue()  ? "EN": "UA"}</h1>
      <h1>My Portfolio</h1>
      <h2>Test Git</h2> 
+    <p>json</p>
      <p>I'm codin on iPad Pro</p>
      <a href="#test">test link</a>
      <Routes>
@@ -24,6 +26,7 @@ function App() {
      <Route path="/Pageone" element={<Pageone />}/>
      <Route path="/Pagetwo" element={<Pagetwo />}/>
      <Route path="/Chat" element={<Chat />}/>
+     
      </Routes>
      
       
