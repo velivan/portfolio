@@ -5,6 +5,7 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom'
 import Pagetwo from './component/Pages/Pagetwo';
 import Pageone from './component/Pages/Pageone';
 import Homepage from './component/Pages/Homepage';
+import Chat from './component/Chat/Chat';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
      <Route path="/" element={<Homepage />}/>
      <Route path="/Pageone" element={<Pageone />}/>
      <Route path="/Pagetwo" element={<Pagetwo />}/>
+     <Route path="/Chat" element={<Chat />}/>
      </Routes>
      
       
