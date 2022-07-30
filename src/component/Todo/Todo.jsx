@@ -25,6 +25,7 @@ const Todo = (props) => {
         </button>
       </div>
       <Todoitem todolist={props.todolist} />
+      
     </div>
   );
 };
