@@ -8,6 +8,9 @@ import Homepage from './component/Pages/Homepage';
 import Chat from './component/Chat/Chat';
 import dataUser from './API/dataUser.json';
 import dataMsg from './API/dataMsg.json';
+import todolist from './API/todolist.json';
+import Todo from './component/Todo/Todo';
+
 
 
 function App(props) {
@@ -17,24 +20,13 @@ function App(props) {
     <Nav />
     
     <h1>{langue()  ? "EN": "UA"}</h1>
-     <h1>My Portfolio</h1>
-     <h2>Test Git</h2> 
-    <p>json</p>
-     <p>I'm codin on iPad Pro</p>
-     <a href="#test">test link</a>
-     <Routes>
-     <Route path="/" element={<Homepage />}/>
-     <Route path="/Pageone" element={<Pageone />}/>
-     <Route path="/Pagetwo" element={<Pagetwo />}/>
-     <Route path="/Chat" element={<Chat dataUser={dataUser} dataMsg={dataMsg}/>}/>
-     
-     </Routes>
-     
-      
-
-     
-    
- 
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+        <Route path="/Pageone" element={<Pageone />}/>
+        <Route path="/Pagetwo" element={<Pagetwo />}/>
+        <Route path="/Todo" element={<Todo todolist={todolist} myList={todolist} />}/>
+        <Route path="/Chat" element={<Chat dataUser={dataUser} dataMsg={dataMsg}/>}/>
+      </Routes>
     </div>
  </BrowserRouter>
   );

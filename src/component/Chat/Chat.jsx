@@ -10,7 +10,7 @@ const DialogItem = (props) =>{
 
     return <NavLink to={path}>
                 <div className={style.dialog} id={props.id}>
-                    <p>{langue()  ? props.nameEn : props.nameUa}</p>
+                    {langue()  ? props.nameEn : props.nameUa}
                 </div>
             </NavLink>
     

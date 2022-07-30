@@ -11,6 +11,7 @@ const Nav = () =>{
         <Navlink name={lang() ? "Home Page" : "Домашня сторінка"} link="/"/>
         <Navlink name={lang() ? "One Page" : "Перша сторінка"} link="Pageone"/>
         <Navlink name={lang() ? "Two Page" : "Друга сторінка"} link="Pagetwo"/>
+        <Navlink name={lang() ? "To do list" : "Список справ"} link="Todo"/>
         <Navlink name={lang() ? "Chat" : "Чат"} link="Chat"/>
         <Langue />
         </div>
